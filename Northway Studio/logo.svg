@@ -1,0 +1,9 @@
+<svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- N Symbol with geometric arrow -->
+  <path d="M8 32V8L20 20V8" stroke="#1F1F1F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="24" cy="20" r="2" fill="#E06F3C"/>
+  
+  <!-- Text -->
+  <text x="35" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#1F1F1F" letter-spacing="-0.5">NORTHWAY</text>
+  <text x="35" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="500" fill="#767676" letter-spacing="1">STUDIO</text>
+</svg>

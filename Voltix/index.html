@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltix — Save Hours Every Week</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <rect width="28" height="28" rx="6" fill="url(#logo-gradient)"/>
+                        <path d="M8 14L12 20L20 8" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="logo-gradient" x1="0" y1="0" x2="28" y2="28">
+                                <stop stop-color="#6366F1"/>
+                                <stop offset="1" stop-color="#8B5CF6"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="logo-text">Voltix</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#testimonials">Testimonials</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="#" class="nav-link-login">Log in</a>
+                    <a href="#cta" class="nav-cta">Start free trial</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#" class="mobile-login">Log in</a>
+            <a href="#cta" class="btn btn-primary">Start free trial</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-glow"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>New: AI-powered task suggestions</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Get 10 hours back</span>
+                    <span class="title-line title-gradient">
+                        <span class="rotating-words">
+                            <span class="word active">every single week</span>
+                            <span class="word">starting today</span>
+                            <span class="word">guaranteed</span>
+                        </span>
+                    </span>
+                </h1>
+                <p class="hero-subtitle">
+                    Voltix replaces your messy spreadsheets, scattered notes, and endless email threads with one intelligent workspace.
+                </p>
+                <div class="hero-cta">
+                    <a href="#cta" class="btn btn-primary">
+                        <span>Start free trial</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="btn btn-ghost btn-video" id="watch-demo-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/>
+                        </svg>
+                        Watch demo
+                    </a>
+                </div>
+                <p class="hero-note">No credit card required • Free for 14 days</p>
+                <div class="keyboard-hint">
+                    <kbd>⌘</kbd><kbd>K</kbd>
+                    <span>to capture from anywhere</span>
+                </div>
+            </div>
+            
+            <!-- Product Preview -->
+            <div class="hero-visual">
+                <div class="browser-mockup">
+                    <div class="browser-header">
+                        <div class="browser-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="browser-bar">app.voltix.io</div>
+                    </div>
+                    <div class="browser-content">
+                        <div class="app-sidebar">
+                            <div class="sidebar-item active">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="7" height="7"/>
+                                    <rect x="14" y="3" width="7" height="7"/>
+                                    <rect x="14" y="14" width="7" height="7"/>
+                                    <rect x="3" y="14" width="7" height="7"/>
+                                </svg>
+                            </div>
+                            <div class="sidebar-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 11l3 3L22 4"/>
+                                    <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+                                </svg>
+                            </div>
+                            <div class="sidebar-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="app-main">
+                            <div class="app-header-row">
+                                <span class="app-title">Today's Focus</span>
+                                <span class="app-date">January 27</span>
+                            </div>
+                            <div class="task-list">
+                                <div class="task-item completed">
+                                    <div class="task-check checked"></div>
+                                    <span>Review Q1 roadmap</span>
+                                    <span class="task-tag tag-done">Done</span>
+                                </div>
+                                <div class="task-item">
+                                    <div class="task-check"></div>
+                                    <span>Sync with design team</span>
+                                    <span class="task-tag tag-progress">In Progress</span>
+                                </div>
+                                <div class="task-item">
+                                    <div class="task-check"></div>
+                                    <span>Prepare investor deck</span>
+                                    <span class="task-tag tag-priority">High Priority</span>
+                                </div>
+                            </div>
+                            <div class="app-stats">
+                                <div class="stat-mini">
+                                    <span class="stat-label">Tasks Done</span>
+                                    <span class="stat-value">12/15</span>
+                                </div>
+                                <div class="stat-mini">
+                                    <span class="stat-label">Time Saved</span>
+                                    <span class="stat-value">3.2h</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Floating Elements -->
+                <div class="float-card float-1">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2">
+                        <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                    <span>Task completed!</span>
+                </div>
+                <div class="float-card float-2">
+                    <span class="float-avatar">JD</span>
+                    <span>Just joined the workspace</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logos Section -->
+    <section class="logos-section">
+        <div class="container">
+            <p class="logos-title">Trusted by fast-moving teams at</p>
+            <div class="logos-track">
+                <div class="logos-slide">
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Stripe</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Notion</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Linear</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Vercel</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Figma</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Loom</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Slack</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Dropbox</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Asana</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Airtable</text>
+                        </svg>
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Stripe</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Notion</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Linear</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Vercel</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Figma</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Loom</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Slack</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Dropbox</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Asana</text>
+                        </svg>
+                    </div>
+                    <div class="logo-item">
+                        <svg viewBox="0 0 120 30" fill="currentColor">
+                            <text x="0" y="22" font-size="18" font-weight="600">Airtable</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Features</span>
+                <h2 class="section-title">Everything you need.<br>Nothing you don't.</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Instant Capture</h3>
+                    <p class="feature-desc">Capture tasks from anywhere with our browser extension, mobile app, or keyboard shortcuts. Never lose an idea again.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Scheduling</h3>
+                    <p class="feature-desc">AI analyzes your calendar and workload to suggest the perfect time for every task. Work smarter, not harder.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 010 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Team Sync</h3>
+                    <p class="feature-desc">Real-time collaboration with your team. See who's working on what, share updates, and stay aligned without meetings.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                            <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Deep Integrations</h3>
+                    <p class="feature-desc">Connect with Slack, Google Calendar, GitHub, and 50+ tools. Your workflow, unified in one place.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">How It Works</span>
+                <h2 class="section-title">From chaos to clarity<br>in three steps</h2>
+            </div>
+            
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Connect your tools</h3>
+                        <p class="step-desc">Import tasks from email, Slack, and your calendar. Voltix automatically organizes everything.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="connect-icons">
+                            <div class="connect-icon">📧</div>
+                            <div class="connect-icon">💬</div>
+                            <div class="connect-icon">📅</div>
+                        </div>
+                        <div class="connect-arrow">→</div>
+                        <div class="connect-logo">V</div>
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Let AI prioritize</h3>
+                        <p class="step-desc">Our AI learns your work patterns and surfaces what matters most. No manual sorting required.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="priority-list">
+                            <div class="priority-item high">High priority</div>
+                            <div class="priority-item medium">Medium</div>
+                            <div class="priority-item low">Low</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Execute with focus</h3>
+                        <p class="step-desc">Work through your day with a clear plan. Track progress and celebrate wins as you go.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="progress-circle">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" stroke="#E5E7EB" stroke-width="8" fill="none"/>
+                                <circle cx="50" cy="50" r="45" stroke="url(#progress-gradient)" stroke-width="8" fill="none" stroke-dasharray="212" stroke-dashoffset="42" stroke-linecap="round"/>
+                                <defs>
+                                    <linearGradient id="progress-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#6366F1"/>
+                                        <stop offset="100%" stop-color="#8B5CF6"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <span class="progress-text">80%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">Teams that trust Voltix</h2>
+            </div>
+            
+            <!-- Stats Row -->
+            <div class="social-stats">
+                <div class="social-stat">
+                    <span class="stat-number" data-count="2500">0</span>
+                    <span class="stat-suffix">+</span>
+                    <p class="stat-label">Teams using Voltix</p>
+                </div>
+                <div class="social-stat">
+                    <span class="stat-number" data-count="10">0</span>
+                    <span class="stat-suffix">M</span>
+                    <p class="stat-label">Tasks completed</p>
+                </div>
+                <div class="social-stat">
+                    <span class="stat-number" data-count="50000">0</span>
+                    <span class="stat-suffix">+</span>
+                    <p class="stat-label">Hours saved weekly</p>
+                </div>
+            </div>
+            
+            <!-- Testimonial Cards -->
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote class="testimonial-quote">
+                        "Voltix replaced three tools for us. Our team saves at least 2 hours per person per day. The ROI was instant."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SK</div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah Kim</span>
+                            <span class="author-role">Head of Ops, Acme Corp</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card featured">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote class="testimonial-quote">
+                        "We went from 15+ weekly sync meetings to 3. Voltix keeps everyone aligned without the overhead. Game changer."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div class="author-info">
+                            <span class="author-name">Marcus Johnson</span>
+                            <span class="author-role">CEO, Pixel Labs (50+ team)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote class="testimonial-quote">
+                        "The AI prioritization is scarily accurate. It's like having a personal productivity coach built into my workflow."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LT</div>
+                        <div class="author-info">
+                            <span class="author-name">Lisa Torres</span>
+                            <span class="author-role">Engineering Lead, Bolt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison" id="comparison">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Why Voltix</span>
+                <h2 class="section-title">One tool to replace them all</h2>
+            </div>
+            
+            <div class="comparison-visual">
+                <div class="comparison-before">
+                    <h3>Before Voltix</h3>
+                    <div class="tool-stack">
+                        <div class="tool-item">
+                            <span class="tool-icon">📊</span>
+                            <span>Spreadsheets</span>
+                        </div>
+                        <div class="tool-item">
+                            <span class="tool-icon">🗒️</span>
+                            <span>Note apps</span>
+                        </div>
+                        <div class="tool-item">
+                            <span class="tool-icon">📧</span>
+                            <span>Email threads</span>
+                        </div>
+                        <div class="tool-item">
+                            <span class="tool-icon">📅</span>
+                            <span>Calendar</span>
+                        </div>
+                        <div class="tool-item">
+                            <span class="tool-icon">💬</span>
+                            <span>Chat apps</span>
+                        </div>
+                    </div>
+                    <div class="comparison-stats bad">
+                        <div class="comp-stat">
+                            <span class="comp-value">5+</span>
+                            <span class="comp-label">Tools to manage</span>
+                        </div>
+                        <div class="comp-stat">
+                            <span class="comp-value">2hrs</span>
+                            <span class="comp-label">Lost daily to context switching</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="comparison-arrow">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+                
+                <div class="comparison-after">
+                    <h3>With Voltix</h3>
+                    <div class="voltix-unified">
+                        <div class="unified-logo">
+                            <svg width="48" height="48" viewBox="0 0 28 28" fill="none">
+                                <rect width="28" height="28" rx="6" fill="url(#comp-gradient)"/>
+                                <path d="M8 14L12 20L20 8" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                    <linearGradient id="comp-gradient" x1="0" y1="0" x2="28" y2="28">
+                                        <stop stop-color="#6366F1"/>
+                                        <stop offset="1" stop-color="#8B5CF6"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span class="unified-text">One workspace<br>for everything</span>
+                    </div>
+                    <div class="comparison-stats good">
+                        <div class="comp-stat">
+                            <span class="comp-value">1</span>
+                            <span class="comp-label">Tool for your team</span>
+                        </div>
+                        <div class="comp-stat">
+                            <span class="comp-value">10hrs</span>
+                            <span class="comp-label">Saved every week</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Pricing</span>
+                <h2 class="section-title">Simple, transparent pricing</h2>
+                <p class="section-subtitle">Start free, upgrade when you're ready. No hidden fees.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Free</h3>
+                        <p class="plan-desc">For individuals getting started</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">$0</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg>Up to 50 tasks</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg>Basic integrations</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg>Mobile app access</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg>7-day history</li>
+                    </ul>
+                    <a href="#cta" class="btn btn-ghost btn-full">Get started free</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Pro</h3>
+                        <p class="plan-desc">For professionals & small teams</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">$12</span>
+                        <span class="price-period">/user/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg>Unlimited tasks</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg>All integrations (50+)</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg>AI prioritization</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg>Team collaboration</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg>Unlimited history</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg>Priority support</li>
+                    </ul>
+                    <a href="#cta" class="btn btn-primary btn-full">Start 14-day free trial</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <p class="plan-desc">For larger organizations</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">Custom</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg>Everything in Pro</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg>SSO & SAML</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg>Advanced security</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg>Custom integrations</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg>Dedicated success manager</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg>SLA guarantee</li>
+                    </ul>
+                    <a href="#" class="btn btn-ghost btn-full">Contact sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">Questions? We've got answers.</h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How is Voltix different from other task managers?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Unlike traditional task managers, Voltix uses AI to automatically prioritize your work based on deadlines, dependencies, and your work patterns. It also unifies all your tools in one place, eliminating context switching.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I import my existing tasks from other tools?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Voltix supports one-click imports from Asana, Trello, Notion, Todoist, and more. You can also import from CSV files. Most teams are fully migrated within 10 minutes.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is my data secure?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We use bank-level encryption (AES-256), are SOC 2 Type II certified, and GDPR compliant. Your data is backed up in real-time across multiple regions. Enterprise plans include additional security features like SSO and audit logs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What happens after my free trial ends?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can continue using Voltix for free with our Free plan (up to 50 tasks). If you want to keep Pro features, you can upgrade anytime. We'll never delete your data — it's always there when you're ready to come back.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer refunds?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer a 30-day money-back guarantee. If you're not satisfied with Voltix for any reason, just reach out to our support team and we'll process a full refund — no questions asked.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I cancel anytime?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12h14"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you can cancel your subscription at any time with no penalties or fees. You'll continue to have access to Pro features until the end of your billing period.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-glow"></div>
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to get your time back?</h2>
+                    <p class="cta-subtitle">Join 2,500+ teams who've made the switch. Start your free 14-day trial today.</p>
+                    <div class="cta-form">
+                        <input type="email" placeholder="Enter your work email" class="cta-input">
+                        <button class="btn btn-primary btn-large">
+                            <span>Start free trial</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="cta-note">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        No credit card required • Cancel anytime • Setup in 2 minutes
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="video-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            <div class="video-placeholder">
+                <div class="video-play-large">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="white">
+                        <polygon points="5,3 19,12 5,21"/>
+                    </svg>
+                </div>
+                <p>Product Demo Video</p>
+                <span>2:34</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll CTA Popup -->
+    <div class="scroll-popup" id="scroll-popup">
+        <button class="popup-close" id="popup-close">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+        <div class="popup-content">
+            <span class="popup-emoji">⚡</span>
+            <div class="popup-text">
+                <strong>Ready to save 10 hours a week?</strong>
+                <span>Try Voltix free for 14 days</span>
+            </div>
+            <a href="#cta" class="btn btn-primary btn-small">Start free trial</a>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="video-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            <div class="video-placeholder">
+                <div class="video-play-large">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="white">
+                        <polygon points="5,3 19,12 5,21"/>
+                    </svg>
+                </div>
+                <p>Product Demo Video</p>
+                <span>2:34</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll CTA Popup -->
+    <div class="scroll-popup" id="scroll-popup">
+        <button class="popup-close" id="popup-close">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+        <div class="popup-content">
+            <span class="popup-emoji">⚡</span>
+            <div class="popup-text">
+                <strong>Ready to save 10 hours a week?</strong>
+                <span>Try Voltix free for 14 days</span>
+            </div>
+            <a href="#cta" class="btn btn-primary btn-small">Start free trial</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <rect width="28" height="28" rx="6" fill="url(#logo-gradient-2)"/>
+                            <path d="M8 14L12 20L20 8" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="logo-gradient-2" x1="0" y1="0" x2="28" y2="28">
+                                    <stop stop-color="#6366F1"/>
+                                    <stop offset="1" stop-color="#8B5CF6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="logo-text">Voltix</span>
+                    </a>
+                    <p class="footer-tagline">The productivity tool for modern teams.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Product</h4>
+                        <a href="#">Features</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Integrations</a>
+                        <a href="#">Changelog</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <a href="#">Help Center</a>
+                        <a href="#">Community</a>
+                        <a href="#">Templates</a>
+                        <a href="#">Guides</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Voltix. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

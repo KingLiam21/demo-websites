@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harbor & Stone — Boutique Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <span class="loader-logo">Harbor & Stone</span>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Skip to Content (Accessibility) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo" aria-label="Harbor & Stone Home">Harbor & Stone</a>
+                <div class="nav-links" id="navLinks">
+                    <a href="#rooms">Rooms</a>
+                    <a href="#amenities">Experience</a>
+                    <a href="#location">Location</a>
+                </div>
+                <a href="#book" class="nav-cta">Check Availability</a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#rooms">Rooms</a>
+            <a href="#amenities">Experience</a>
+            <a href="#location">Location</a>
+            <a href="#book" class="btn btn-primary">Check Availability</a>
+        </div>
+    </div>
+
+    <!-- Hero Section - Full Width Image -->
+    <main id="main-content">
+    <section class="hero">
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1920&h=1080&fit=crop" alt="Harbor & Stone Hotel">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Where the ocean<br>meets stillness</h1>
+            <p class="hero-subtitle">A quiet retreat on the Maine coast, designed for slow mornings and unhurried days.</p>
+            <a href="#book" class="btn btn-primary">Check Availability</a>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro-content">
+                <span class="section-label">Welcome</span>
+                <h2 class="intro-title">Escape the noise.<br>Find your rhythm.</h2>
+                <p class="intro-text">Harbor & Stone is a 12-room boutique hotel perched on the edge of the Atlantic. Here, time slows. The only sounds are waves, wind, and the crackle of the fireplace. This isn't a place to see — it's a place to feel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms" id="rooms">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Accommodations</span>
+                <h2 class="section-title">Three ways to stay</h2>
+            </div>
+            
+            <div class="rooms-grid">
+                <div class="room-card" data-room="harbor">
+                    <div class="room-image" role="button" tabindex="0" aria-label="View Harbor Room gallery">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop" alt="The Harbor Room">
+                        <div class="room-gallery-hint"><span>View Gallery</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-name">The Harbor Room</h3>
+                        <p class="room-vibe">Garden views, morning light, intimate simplicity</p>
+                        <div class="room-price">
+                            <span class="price-from">From</span>
+                            <span class="price-amount">$285</span>
+                            <span class="price-unit">/night</span>
+                        </div>
+                        <a href="#book" class="btn btn-secondary">Reserve</a>
+                    </div>
+                </div>
+
+                <div class="room-card featured" data-room="stone">
+                    <div class="room-badge">Most Popular</div>
+                    <div class="room-image" role="button" tabindex="0" aria-label="View Stone Suite gallery">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop" alt="The Stone Suite">
+                        <div class="room-gallery-hint"><span>View Gallery</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-name">The Stone Suite</h3>
+                        <p class="room-vibe">Ocean glimpses, private terrace, fireplace glow</p>
+                        <div class="room-price">
+                            <span class="price-from">From</span>
+                            <span class="price-amount">$425</span>
+                            <span class="price-unit">/night</span>
+                        </div>
+                        <a href="#book" class="btn btn-secondary">Reserve</a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room="lighthouse">
+                    <div class="room-image" role="button" tabindex="0" aria-label="View Lighthouse Loft gallery">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&h=600&fit=crop" alt="The Lighthouse Loft">
+                        <div class="room-gallery-hint"><span>View Gallery</span></div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-name">The Lighthouse Loft</h3>
+                        <p class="room-vibe">Panoramic Atlantic views, soaking tub, rooftop access</p>
+                        <div class="room-price">
+                            <span class="price-from">From</span>
+                            <span class="price-amount">$595</span>
+                            <span class="price-unit">/night</span>
+                        </div>
+                        <a href="#book" class="btn btn-secondary">Reserve</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room Comparison Table -->
+            <div class="room-comparison">
+                <h3 class="comparison-title">Compare at a glance</h3>
+                <div class="comparison-table">
+                    <div class="comparison-row comparison-header">
+                        <div class="comparison-cell"></div>
+                        <div class="comparison-cell">Harbor Room</div>
+                        <div class="comparison-cell">Stone Suite</div>
+                        <div class="comparison-cell">Lighthouse Loft</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell label">Size</div>
+                        <div class="comparison-cell">320 sq ft</div>
+                        <div class="comparison-cell">480 sq ft</div>
+                        <div class="comparison-cell">650 sq ft</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell label">Bed</div>
+                        <div class="comparison-cell">Queen</div>
+                        <div class="comparison-cell">King</div>
+                        <div class="comparison-cell">King + Daybed</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell label">View</div>
+                        <div class="comparison-cell">Garden</div>
+                        <div class="comparison-cell">Partial Ocean</div>
+                        <div class="comparison-cell">Panoramic Ocean</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell label">Fireplace</div>
+                        <div class="comparison-cell">—</div>
+                        <div class="comparison-cell">✓</div>
+                        <div class="comparison-cell">✓</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell label">Private Terrace</div>
+                        <div class="comparison-cell">—</div>
+                        <div class="comparison-cell">✓</div>
+                        <div class="comparison-cell">✓</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell label">Soaking Tub</div>
+                        <div class="comparison-cell">—</div>
+                        <div class="comparison-cell">—</div>
+                        <div class="comparison-cell">✓</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guest Reviews Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Guest Stories</span>
+                <h2 class="section-title">What they're saying</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"We came for a weekend and stayed a week. The kind of quiet that actually lets you think. We've already booked our return."</blockquote>
+                    <div class="testimonial-author">
+                        <span class="author-name">Sarah & David M.</span>
+                        <span class="author-date">Stayed October 2025</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"No TV was the best decision they made. We read books, took long walks, and actually talked. The Stone Suite fireplace became our evening ritual."</blockquote>
+                    <div class="testimonial-author">
+                        <span class="author-name">James T.</span>
+                        <span class="author-date">Stayed December 2025</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"I travel constantly for work. This is the first place in years where I genuinely unwound. The sunrise from the Lighthouse Loft is worth every penny."</blockquote>
+                    <div class="testimonial-author">
+                        <span class="author-name">Elena K.</span>
+                        <span class="author-date">Stayed January 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full-Width Image Break -->
+    <section class="image-break">
+        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1920&h=800&fit=crop" alt="Hotel atmosphere">
+        <div class="image-break-overlay"></div>
+        <div class="image-break-text">
+            <blockquote>"The kind of place where you forget what day it is — and that's exactly the point."</blockquote>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities" id="amenities">
+        <div class="container">
+            <div class="amenities-grid">
+                <div class="amenities-content">
+                    <span class="section-label">The Experience</span>
+                    <h2 class="section-title">Everything you need.<br>Nothing you don't.</h2>
+                    <p class="amenities-text">We've stripped away the unnecessary to leave only what matters: comfort, beauty, and the space to simply be.</p>
+                    
+                    <div class="amenities-list">
+                        <div class="amenity-item">
+                            <div class="amenity-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                                </svg>
+                            </div>
+                            <div class="amenity-text">
+                                <h4>Wake to the sunrise</h4>
+                                <p>Every room faces east. Coffee arrives at your door.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="amenity-item">
+                            <div class="amenity-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3 3h18v18H3V3zm9 9v6m0-6l-3 3m3-3l3 3"/>
+                                </svg>
+                            </div>
+                            <div class="amenity-text">
+                                <h4>Absolute quiet</h4>
+                                <p>No TVs. No crowds. Just the sound of the sea.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="amenity-item">
+                            <div class="amenity-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                </svg>
+                            </div>
+                            <div class="amenity-text">
+                                <h4>Curated library</h4>
+                                <p>A collection of books chosen to inspire and restore.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="amenity-item">
+                            <div class="amenity-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div class="amenity-text">
+                                <h4>Farm-to-table dining</h4>
+                                <p>Seasonal menus. Local catch. No reservations needed.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="amenity-item">
+                            <div class="amenity-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                    <path d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                                </svg>
+                            </div>
+                            <div class="amenity-text">
+                                <h4>Fireside evenings</h4>
+                                <p>Gather in the great room. Wine. Conversation. Stars.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="amenity-item">
+                            <div class="amenity-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div class="amenity-text">
+                                <h4>Coastal trails</h4>
+                                <p>Miles of paths along the cliffs. Maps in every room.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="amenities-image">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=700&h=900&fit=crop" alt="Hotel amenities">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location" id="location">
+        <div class="container">
+            <div class="location-grid">
+                <div class="location-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop" alt="Maine coastline">
+                </div>
+                <div class="location-content">
+                    <span class="section-label">The Setting</span>
+                    <h2 class="section-title">Kennebunkport, Maine</h2>
+                    
+                    <!-- Weather Widget -->
+                    <div class="weather-widget" id="weatherWidget">
+                        <div class="weather-icon">🌊</div>
+                        <div class="weather-info">
+                            <span class="weather-temp">38°F</span>
+                            <span class="weather-desc">Partly cloudy, light breeze</span>
+                        </div>
+                    </div>
+                    
+                    <p class="location-text">Perched on a rocky bluff where the Kennebunk River meets the Atlantic, Harbor & Stone sits at the edge of one of New England's most beloved coastal villages. The historic district is a ten-minute stroll through wildflower meadows. The nearest neighbor is a lighthouse.</p>
+                    <p class="location-text">This is a place where lobster boats still set out at dawn, where the air smells of salt and pine, and where the pace of life is measured in tides, not hours.</p>
+                    <div class="location-details">
+                        <div class="location-detail">
+                            <span class="detail-label">From Boston</span>
+                            <span class="detail-value">90 minutes</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="detail-label">From Portland</span>
+                            <span class="detail-value">35 minutes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Itinerary Suggestions -->
+    <section class="itineraries">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Plan Your Stay</span>
+                <h2 class="section-title">Curated escapes</h2>
+            </div>
+            <div class="itineraries-grid">
+                <div class="itinerary-card">
+                    <div class="itinerary-icon">💑</div>
+                    <h3>Romantic Weekend</h3>
+                    <span class="itinerary-duration">2 nights</span>
+                    <p>Stone Suite with fireplace, couples' sunrise yoga, private lobster dinner on the terrace, and late checkout.</p>
+                    <span class="itinerary-price">From $1,150</span>
+                </div>
+                <div class="itinerary-card">
+                    <div class="itinerary-icon">🧘</div>
+                    <h3>Wellness Retreat</h3>
+                    <span class="itinerary-duration">4 nights</span>
+                    <p>Lighthouse Loft, daily meditation sessions, spa treatments, farm-to-table meal plan, and guided coastal walks.</p>
+                    <span class="itinerary-price">From $2,800</span>
+                </div>
+                <div class="itinerary-card">
+                    <div class="itinerary-icon">📚</div>
+                    <h3>Writer's Solitude</h3>
+                    <span class="itinerary-duration">7 nights</span>
+                    <p>Harbor Room, dedicated writing desk, unlimited coffee service, library access, and absolute quiet.</p>
+                    <span class="itinerary-price">From $1,995</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="book">
+        <div class="cta-bg">
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1920&h=800&fit=crop" alt="Harbor & Stone">
+        </div>
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Your escape awaits</h2>
+                <p class="cta-subtitle">Book directly for the best rates and a welcome amenity on us.</p>
+                <div class="cta-form">
+                    <div class="form-group">
+                        <label>Check-in</label>
+                        <input type="date" placeholder="Select date">
+                    </div>
+                    <div class="form-group">
+                        <label>Check-out</label>
+                        <input type="date" placeholder="Select date">
+                    </div>
+                    <div class="form-group">
+                        <label>Guests</label>
+                        <select>
+                            <option>1 Guest</option>
+                            <option>2 Guests</option>
+                            <option>3 Guests</option>
+                            <option>4 Guests</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary btn-large">Check Availability</button>
+                </div>
+                <p class="cta-note">Questions? Call us at <a href="tel:+12075551234">(207) 555-1234</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <!-- Instagram Feed -->
+            <div class="instagram-feed">
+                <h4>@harborandstone</h4>
+                <div class="instagram-grid">
+                    <a href="#" class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=300&h=300&fit=crop" alt="Instagram post">
+                    </a>
+                    <a href="#" class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=300&h=300&fit=crop" alt="Instagram post">
+                    </a>
+                    <a href="#" class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=300&h=300&fit=crop" alt="Instagram post">
+                    </a>
+                    <a href="#" class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=300&h=300&fit=crop" alt="Instagram post">
+                    </a>
+                    <a href="#" class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=300&h=300&fit=crop" alt="Instagram post">
+                    </a>
+                    <a href="#" class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=300&h=300&fit=crop" alt="Instagram post">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="footer-logo">Harbor & Stone</span>
+                    <p>A boutique hotel on the Maine coast</p>
+                    <address>
+                        142 Ocean Avenue<br>
+                        Kennebunkport, ME 04046
+                    </address>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <a href="#rooms">Rooms</a>
+                    <a href="#amenities">Experience</a>
+                    <a href="#location">Location</a>
+                    <a href="#book">Book Now</a>
+                    <a href="#" class="gift-card-link">🎁 Gift Cards</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="mailto:hello@harborandstone.com">Email Us</a>
+                    <a href="tel:+12075551234">(207) 555-1234</a>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Seasonal offers and coastal inspiration, delivered occasionally.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Your email" required aria-label="Email address">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Harbor & Stone. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Photo Gallery Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery">
+        <button class="lightbox-close" aria-label="Close gallery">×</button>
+        <button class="lightbox-prev" aria-label="Previous image">‹</button>
+        <button class="lightbox-next" aria-label="Next image">›</button>
+        <div class="lightbox-content">
+            <img src="" alt="Gallery image" id="lightboxImage">
+        </div>
+        <div class="lightbox-counter"><span id="lightboxCurrent">1</span> / <span id="lightboxTotal">4</span></div>
+    </div>
+
+    <!-- Cursor Trail -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
